@@ -1,0 +1,691 @@
+@charset "UTF-8";
+/*colores*/
+/*fuentes*/
+/*Medidas*/
+/*MIXINS*/
+/*MIXINS con parámetros*/
+/*CONDICIONALES*/
+/*RESOLLUCIONES DE PANTALLAS*/
+/*SEPARACIONES (margenes y paddings)*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input, textarea {
+  margin-bottom: 20px;
+}
+
+.img1 {
+  height: 50px;
+  width: 100px;
+}
+
+.img2 {
+  height: 70px;
+  width: 35px;
+}
+
+.img3 {
+  height: 750px;
+  width: 50px;
+}
+
+body {
+  background: #e73b35;
+  background: linear-gradient(to left, #f81105, #bd9207);
+}
+
+.logo-CAODIM {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 60, 0);
+  transform: rotateX("angle");
+  transition: width 2s;
+}
+@keyframes go-back {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*EJEMPLO PARA ESCALAR UN ELEMENTO*/
+.logo-CAODIM:hover {
+  -ms-transform-origin-x: 100;
+  width: 300px;
+}
+
+.logo-CAODIM:hover {
+  width: 400px;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.colorDehabilitado {
+  color: black;
+}
+
+/*ESTILOS COMUNES PARA TODAS LAS SECCIONES*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(247, 42, 6);
+}
+
+.colorDehabilitado {
+  color: black;
+}
+
+.carousel-item img {
+  height: 250px;
+}
+
+@media (min-width: 500px) {
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  form.form-mapa{
+    margin-left: 195px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .carousel-item img {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 768px) {
+  header{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .form-mapa{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .carousel-item img {
+    height: 60vh;
+  }
+}
+@media (min-width: 992px) {
+  
+  .carousel-item img {
+    height: 80vh;
+  }
+}
+.navbar-toggler {
+  background-color: yellowgreen;
+}
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.nav-link,
+.nav-link.activate,
+.navbar-nav .nav-link.activate {
+  color: white;
+}
+.nav-link:hover,
+.nav-link.activate:hover,
+.navbar-nav .nav-link.activate:hover {
+  color: #b2b2b2;
+}
+
+h1, h2, p {
+  text-align: center;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .Container-redes a {
+  color: rgb(214, 228, 16);
+  text-decoration: none;
+  font-size: 40px;
+}
+
+h1, h3, h6 {
+  color: black;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formatoMapa {
+  grid-template-columns: auto;
+  padding: auto 100px auto 100px;
+  /* margin: 10px 0px 20px 100px; */
+  flex-wrap: wrap;
+  /* margin: 20px 0px; */
+  height: auto;
+  width: auto;
+  margin-left:250px ;
+}
+
+
+.formatoFormulario {
+  flex-direction: row;
+  margin: 100px 0px 0px 0px;
+  grid-template-columns: auto;
+  padding: 5px 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*colores*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*anidación SCSS*/
+a:hover {
+  font-weight: bold;
+  color: rgb(247, 42, 6);
+}
+a:active {
+  background-color: white;
+  color: black;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-redes {
+  width: 40px;
+}
+
+@media (max-width: 300px) and (min-width: 700px) {
+  body {
+    background-color: rgb(201, 83, 83);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+}
+
+.colorEnlace {
+  color: white;
+}
+
+.fondoBlanco {
+  background-color: white;
+}
+
+/*anidación SCSS*/
+@media (min-width: 692px) {
+  header {
+    color: rgb(255, 113, 47);
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+header __logo {
+  width: 80px;
+  /*TRANSLATE*/
+  /*Atajo para mover en los ejes X y eje Y*/
+  transform: translate(10px, 20px);
+}
+header __menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+header __menu a:hover {
+  font-weight: bold;
+  color: rgb(247, 42, 6);
+}
+header __menu a:active {
+  background-color: rgb(240, 115, 12);
+  color: black;
+}
+
+.fotos_Prod {
+  width: 80px;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.justificar {
+  text-align: justify;
+}
+
+.izquierda {
+  text-align: left;
+}
+
+hr {
+  background-color: #ffffff;
+  border-bottom: 0dvh;
+}
+
+.conteiner {
+  display: flex;
+  margin-left: 150px;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding-left: 50px;
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+
+input {
+  margin: 0 10px;
+}
+
+.formatoForm li {
+  display: inline-block;
+  flex-direction: column;
+  width: 35%;
+  flex-wrap: wrap;
+}
+
+.contenedorMapaForm form {
+  display: inline-block;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 300px 100px 0px 300px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: 0.5em;
+}
+.formulariomapa{
+  display:flex;
+  flex-wrap: nowrap;
+  margin-right: 200px;
+  /* margin-right:auto; */
+  /* margin-left:auto; */
+  /* justify-content: space-around; */
+
+}
+.formatoFormulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-right: 50px;
+  justify-content: space-around;
+} */
+
+.form-mapa {
+  margin-top: 150px;
+}
+
+.form-mapa form {
+  float: left;
+  margin-right: 30px;
+  margin-left: 250PX;
+}
+
+.botones {
+  display: inline;
+  justify-content: space-around;
+}
+#enviar,#cancelar{
+  background-color: red;
+  color:antiquewhite;
+  border:10px;
+  border-radius: 7px;
+  box-shadow: #b2b2b2;
+  width: 180px;
+  height: 60px;
+  padding: 20px;
+  cursor:pointer;
+  /* align-self: center; */
+  align-content: center;
+}
+.formatoBotonEnviar {
+  display: inline;
+  float: left;
+  width: 100px;
+}
+
+.formatoBotonLimpiar {
+  display: inline;
+  float: left;
+  width: 100px;
+}
+
+.CentrarDisenador {
+  border-radius: 10px;
+  text-justify: distribute-all-lines;
+  padding: 1px;
+  border-top: 1px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.Principal {
+  width: 90%;
+  max-width: 120px;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  gap: 20px;
+}
+
+h1 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  color: black;
+  font-size: 15px;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  flex: auto;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 1rem;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 10px;
+  transform: rotate(360);
+}
+
+.publicidadCaidim {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  border-top: 30px;
+  background-size: cover;
+  background-position: center center;
+}
+.publicidadCaidim .boton {
+  background: rgb(247, 42, 6);
+  border: aqua;
+  border-radius: 50px;
+  cursor: pointer;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+.publicidadCaidim ul {
+  list-style: none;
+}
+.publicidadCaidim ul li {
+  margin: 15px;
+  font-weight: bold;
+  list-style: none;
+}
+.telefonoDisenador{
+  background-color: #bd9207;
+}
+article, nav, header, footer {
+  padding: 1rem;
+  margin: 1px;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .Container-redes a {
+  color: rgb(214, 228, 16);
+  text-decoration: none;
+  font-size: 40px;
+}
+
+nav {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.parrafo18 {
+  font-size: 18px;
+  padding: 2rem;
+}
+
+.parrafo20 {
+  font-size: 20px;
+  border-bottom: 5px;
+}
+
+.parraforojo {
+  color: rgb(247, 42, 6);
+}
+
+.parrafoAzul {
+  color: rgb(25, 0, 255);
+}
+
+.textoBlanco {
+  font-style: italic;
+  color: rgb(235, 229, 229);
+}
+
+header nav {
+  width: 100%;
+}
+
+.ColorCliente {
+  background-color: green;
+}
+
+.colorDireccion {
+  background-color: rgb(124, 75, 52);
+  font-style: oblique;
+}
+
+.moverImagen {
+  transform: translate3d(150px);
+}
+
+.colorFuentePie {
+  color: rgb(235, 229, 229);
+}
+
+/* utilizando grid */
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 4fr 2fr 4fr;
+  border: solid 7px yellowgreen;
+  transform: translate(30px, 10px);
+  gap: 5px;
+  margin: 30px 0;
+}
+
+.grid-item {
+  border: solid 2px rgb(247, 42, 6);
+}
+
+.lustramuebles, .Jabón, .perfuminas, .Rollos, .Mostrador, .frenteNegocio {
+  max-width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#ImagenForm{
+  display: flex;
+}
+.lustramuebles {
+  background-image: url(../img/productos/insecticidas-lustramuebles.jpg);
+  grid-area: il;
+}
+
+.Jabón {
+  background-image: url(../img/productos/Jabón-esponja-escobillon.jpg);
+  grid-area: je;
+  /* align-self: stretch; */
+  height: 50%;
+}
+
+.perfuminas {
+  background-image: url(../img/productos/Mostador-perfuminas.jpg);
+  grid-area: mp;
+  height: 50px;
+}
+
+.Rollos {
+  background-image: url(../img/productos/Rollos\ cocina.jpg);
+  grid-area: rc;
+  height: 50px;
+}
+
+.Mostrador {
+  background-image: url(../img/productos/Mostrador.jpg);
+  grid-area: pc;
+  height: 50px;
+}
+
+.frenteNegocio {
+  background-image: url(../img/productos/Frente\ Local.jpg);
+  grid-area: fl;
+  height: 50od;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 4px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+/*# sourceMappingURL=styles.css.map */

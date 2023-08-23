@@ -1,0 +1,52 @@
+.img1{
+    @include medidasFotos(50px,100px);
+}
+.img2{
+    @include medidasFotos(70px,35px);
+}
+.img3{
+    @include medidasFotos(750px,50px);
+}
+
+body{
+background: #e73b35;
+background: linear-gradient(to left, #f81105, #bd9207);
+}
+
+.logo-CAODIM {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 60, 0);
+    @keyframes go-back {
+      0% {
+          transform: translateX(100px);
+      }
+      100% {
+          transform: translateY(0);
+      }
+  }
+  transform: rotateX('angle');
+  
+  
+    transition: width 2s;
+  }
+  
+  /*EJEMPLO PARA ESCALAR UN ELEMENTO*/
+  .logo-CAODIM:hover {
+
+    -ms-transform-origin-x: 100;
+    width: 300px;
+  }
+  
+  .logo-CAODIM:hover {
+    width: 400px;
+}
+h2{
+    margin-top:15px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+  
+.colorDeshabilitado{
+    color:black;
+}

@@ -1,0 +1,44 @@
+/*colores*/
+$colorCaidim: rgb(247, 42, 6);
+$colorFuente:rgb(235, 229, 229);
+$ColorBody: rgb(180, 26, 26);
+
+$color-primario: blue;
+$color-secundario:#b2b2b2;
+$color-terciario: rgb(214, 228, 16);
+
+/*fuentes*/
+$fuente-principal: "Roboto", sans-serif;
+$fuente-chica: 14px;
+$fuente-media: 20px;
+$Color_Datos_Cliente:  rgb(235, 229, 229);
+
+/*Medidas*/
+$espaciado: 50px;
+
+/*MIXINS*/
+@mixin flex-column-centrado{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+/*MIXINS con parámetros*/
+@mixin medidasFotos($alto,$ancho){
+height:$alto;
+width:$ancho;
+}
+
+/*CONDICIONALES*/
+$fiesta: ninguna;
+
+/*RESOLLUCIONES DE PANTALLAS*/
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1200PX;
+
+/*SEPARACIONES (margenes y paddings)*/
+$espacio-mini:10px;
+$espacio-chico:20px;
+$espacio-medio:40px;
+$espacio-grande:60px;

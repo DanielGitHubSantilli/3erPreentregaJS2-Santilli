@@ -1,0 +1,8 @@
+{
+    "codigo":"12345",
+    "descripcion":"Detergente",
+    "capacidad": "300ml",
+    "precio": "1000",
+    "stock": "300",
+    "precioIva": "363"
+    }

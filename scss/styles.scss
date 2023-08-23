@@ -1,0 +1,367 @@
+// var Iamgenes;
+@import "variables";
+@import "galeria";
+@import "comunes";
+@import "inicio";
+@import "contacto";
+@import "productos";
+
+/*colores*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+/*anidación SCSS*/
+a{
+    &:hover { 
+    font-weight: bold;
+    color: $colorCaidim;
+    }
+    &:active {
+    background-color: white;
+    color:black;
+    } 
+    &:link{
+        text-decoration: none;
+        color:black;
+    } 
+}
+.logo-redes {
+    width: 40px;
+    
+}
+body { 
+    // background-color: rgb(150, 36, 36);
+    @media(max-width:300px) and (min-width:700px)
+    {background-color: rgb(201, 83, 83); 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+}
+.colorEnlace{
+    color:white;
+}
+.fondoBlanco{
+    background-color: white;
+}
+/*anidación SCSS*/
+header { 
+    @media(min-width: 692px)
+    {color: rgb(255, 113, 47);
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    __logo {
+    width: 80px;
+    /*TRANSLATE*/
+    /*Atajo para mover en los ejes X y eje Y*/
+    transform: translate(10px, 20px);
+    }
+    __menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+        a { 
+            &:hover{
+            font-weight: bold;
+            color: $colorCaidim;
+            }
+            &:active {
+                background-color: rgb(240, 115, 12);
+                color: black;
+                }  
+            }
+        }   
+    }
+
+.fotos_Prod{
+    width:80px;
+}
+
+.centrar{
+    text-align: center;
+
+}
+.justificar{
+    text-align: justify;
+}
+.izquierda{
+    text-align:left;
+}
+hr{
+    background-color: #ffffff;
+    border-bottom: 0dvh;
+}
+
+.conteiner {
+    display: flex;
+    margin-left: 150px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;  
+    padding-left: 50px; 
+    // margin:10px 10px;
+    margin-left: 130px;
+    margin-bottom: 50px;
+  }
+input {
+    margin:0 10px;
+  }  
+.formatoForm li{
+    display:inline-block;
+    flex-direction: column;
+    width:35%;
+    flex-wrap:wrap;
+}
+.contenedorMapaForm form{
+    display:inline-block;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    // padding:auto 200px auto 300px;
+    margin: 300px 100px 0px 300px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    overflow:auto;
+
+}
+.formatoFormulario {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+    //  padding:auto 200px auto 0px;
+    // margin-right: 500px;
+    margin-left: 5000px;
+    justify-content:space-around;
+          //  flex-wrap: wrap;
+    //  margin-bottom: 30px;
+    //  overflow:auto;
+}
+   .form-mapa{
+    margin-top:150px;
+   }
+   .form-mapa form{
+    float:left;
+    margin-right: 30px;
+    margin-left:250PX;
+   }
+   .botones{
+    display:inline;
+    justify-content:space-around;
+   }
+.formatoBotonEnviar{
+    display:inline;
+    float:left;
+    width:100px;
+}
+.formatoBotonLimpiar{
+    display:inline;
+    float:left;
+    width: 100px;
+}
+.CentrarDiseñador{
+    border-radius: 10px;
+	// text-align:center;
+    text-justify: distribute-all-lines;
+	padding: 1px;
+    border-top: 1px;
+	background-size: cover;
+	background-position: center center;
+}
+.Principal{
+    width:90%;
+    max-width: 120px;
+    margin: auto;
+    padding:40px 0;
+    display:flex;
+    gap:20px;
+}
+h1{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    }
+h2{
+    color: black;
+    }
+    p{
+    color:black;
+    font-size: 15px;
+}
+nav{
+    ul {
+    display: flex;
+        li {
+            flex: auto ;
+            list-style: none;
+        }
+        }
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+    li a{
+        list-style: none;
+        text-decoration: none;
+        color:white;
+    }
+}
+main {
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    transform:rotate(360)
+  }
+.publicidadCaidim{
+    border-radius: 10px;
+	text-align:center;
+	padding: 20px;
+    border-top: 30px;
+	background-size: cover;
+	background-position: center center;
+    .boton {
+        background:$colorCaidim;
+        border:aqua;
+        border-radius: 50px;
+        cursor: pointer;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        }
+        ul {    
+            list-style: none;
+                li{
+                    margin: 15px;
+                    font-weight: bold;   
+                    list-style: none;
+                    }
+            }
+}
+article,nav,header,footer{
+    padding: 1rem;
+    margin:1px;
+}
+footer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .Container-redes a {
+    color: rgb(214, 228, 16);
+    text-decoration: none;
+    font-size: 40px;
+  }
+  
+nav{
+    max-width: 900px;
+    margin:auto;
+    margin-top: 50px;
+}
+.parrafo18{
+    font-size:18px;
+    padding: 2rem;
+}
+.parrafo20{
+    font-size: 20px;
+    border-bottom: 5px;
+}
+.parraforojo{
+    color:$colorCaidim;
+}
+.parrafoAzul{
+    color:rgb(25, 0, 255);
+}
+.textoBlanco{
+    font-style:italic;
+    color:$colorFuente;
+}
+header nav{
+    width: 100%;
+}
+.ColorCliente{
+    background-color: green;
+}
+.colorDireccion{
+    background-color: rgb(124, 75, 52);
+    font-style:oblique;
+}
+.moverImagen{
+    transform:translate3d(150px)
+}
+
+.colorFuentePie{
+    color:$colorFuente;
+}
+/* utilizando grid */
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 4fr 2fr 4fr;
+    border:solid 7px yellowgreen;
+    transform: translate(30px,10px);
+
+    // // // "il fl fl je je"
+    // // // "il fl fl je je"
+    // // // "pm fl fl mp mp"
+    // // // "pm pm pm rc rc";
+    gap: 5px;
+    margin: 30px 0;
+}
+.grid-item{
+border:solid 2px $colorCaidim;
+}
+.lustramuebles, .Jabón, .perfuminas, .Rollos, .Mostrador, .frenteNegocio {
+    max-width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lustramuebles {
+    background-image: url(../img/productos/insecticidas-lustramuebles.jpg);
+    grid-area: il;
+    // insecticidalustramueble
+}
+.Jabón {
+    background-image: url(../img/productos/Jabón-esponja-escobillon.jpg);
+    grid-area: je;
+    /* align-self: stretch; */
+    // JabonEsponja
+    height: 100%;
+}
+.perfuminas {
+    background-image: url(../img/productos/Mostador-perfuminas.jpg);
+    grid-area: mp;
+    // MostradorPerfuminas
+}
+.Rollos {
+    background-image: url(../img/productos/Rollos\ cocina.jpg);
+    grid-area: rc;
+    // RolloCocina
+}
+.Mostrador {
+    background-image: url(../img/productos/Mostrador.jpg);
+    grid-area: pc;
+}
+.frenteNegocio {
+    background-image: url(../img/productos/Frente\ Local.jpg);
+    grid-area: fl;
+}
+

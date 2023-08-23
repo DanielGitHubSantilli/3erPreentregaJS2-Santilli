@@ -1,0 +1,59 @@
+.body{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+// @media(min-width: $tablet){
+//     .conteiner{
+//         display:grid;
+//         grid-template-columns: repeat(2,1fr);
+//         align-items: center;
+//         justify-items: center;
+//     }
+
+// // }
+// .botones-Form{
+//     border:solid 1px $color-secundario;
+//     width:200px;
+//     padding:$espacio-mini;
+//     border-radius: 10px;
+//     background-color: $colorCaidim;
+//     color:rgb(128, 128, 128);
+//     font-weight: bold;
+//     justify-items: center;
+//     justify-content: center;
+//     &:hover{
+//         background-color: $color-primario;
+//         color:$color-terciario;
+//     }
+// }
+// iframe{
+//     max-width: 100%;
+// }
+// textarea{
+//     height: 150px;
+//     width:220px;
+// }
+.formatoMapa 
+{
+//   display:flex; 
+  grid-template-columns: auto;
+  padding: auto 100px auto 100px;
+  margin: 10px 0px 20px 100px;   
+  flex-wrap: wrap;
+  margin:20px 0px;
+  height: auto;
+  width: auto;
+}
+.formatoFormulario 
+{
+//   display: flex;
+  flex-direction: row;
+  margin: 100px 0px 0px 0px; 
+  grid-template-columns: auto;
+  padding: 5px 10px; 
+  justify-content: center;
+  flex-wrap: wrap;
+}

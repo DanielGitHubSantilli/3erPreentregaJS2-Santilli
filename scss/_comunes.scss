@@ -1,0 +1,73 @@
+/*ESTILOS COMUNES PARA TODAS LAS SECCIONES*/
+body{
+    font-family: $fuente-principal;
+    background-color: $colorCaidim;
+    // color:$color-secundario;
+}
+.colorDeshabilitado{
+    color:black;
+}
+.carousel-item img{
+    height:250px;
+}
+@media (min-width:$tablet){
+    .carousel-item img{
+        height:60vh;
+    }
+}
+@media (min-width:$desktop)
+{
+    .carousel-item img{
+        height:80vh;
+    }
+}
+
+.navbar-toggler
+{
+    background-color: yellowgreen;
+}
+.error404
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.nav-link,
+.nav-link.activate,
+.navbar-nav .nav-link.activate
+{
+    color:white;
+    &:hover{
+        color:$color-secundario;
+    }
+}
+h1,h2,p
+{
+    text-align: center;
+    margin-top: $espacio-medio;
+}
+
+p{
+    font-size: $fuente-media;
+}
+
+footer{
+    margin-top: $espacio-grande;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
+    .Container-redes a
+    {
+        color:$color-terciario;
+        text-decoration: none;
+        font-size: 40px;
+    }
+}
+
+h1,h3,h6
+{
+    color:black;
+}
